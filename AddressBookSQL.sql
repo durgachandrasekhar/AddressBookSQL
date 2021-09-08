@@ -27,3 +27,6 @@ UPDATE AddressBook
 SET city = 'Frankfurt', state = 'Ohio'
 WHERE firstname = 'Matthew';
 select * from AddressBook;
+
+DELETE FROM AddressBook WHERE firstname='Christopher'
+select * from AddressBook
