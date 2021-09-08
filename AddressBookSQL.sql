@@ -41,3 +41,11 @@ select COUNT(firstname) from AddressBook where city = 'Memphis' or state = 'Tenn
 
 
 select * from AddressBook where city = 'Memphis' order by firstname
+
+ALTER TABLE AddressBook 
+ADD type varchar(150),
+	name varchar(100)
+update AddressBook set type = 'Friend', name = 'FriendsBook' where firstname in ('Matthew','David','Tyler','Janice','Liam');
+update AddressBook set type = 'Family', name = 'FamilyBook' where firstname in ('Ismael','Byron');
+update AddressBook set type = 'Colleague', name = 'Office' where firstname = 'James'
+select * from AddressBook
